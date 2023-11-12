@@ -12,7 +12,19 @@ const BlogPage = ({ blogPosts, loading, error }) => {
     setIsLoading(false);
   }, []);
   if (isLoading) {
-    return <p style={{ color: "white" }}>Loading...</p>;
+    // return <p style={{ color: "white" }}>Loading...</p>;
+    return (
+      <div className={styles.main}>
+        <div className={styles.spinner}>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {

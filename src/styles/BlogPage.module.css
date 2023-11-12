@@ -1,0 +1,84 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 120px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+    min-height: 100vh;
+}
+
+.title,
+.author,
+.date {
+    margin: 20px 0;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.cardBody {
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    box-shadow: 0 3px 10px rgba(210, 198, 198, 0.2);
+    background-color: #fff;
+}
+
+.content {
+    padding: 10px;
+    text-align: start;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    border: 0.1em solid #000;
+    margin: 10px 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/BlogPage.module.css";
+import Link from "next/link";
 
 const BlogCard = ({ post }) => {
   return (
@@ -27,14 +28,10 @@ const BlogCard = ({ post }) => {
             year: "numeric",
           })}
         </p>
-        <p> {post.yoast_head_json.description}</p>
-        <a
-          className={styles.button}
-          href={post.yoast_head_json.og_url}
-          target="_blank"
-        >
-          Read Full Post
-        </a>{" "}
+        <p style={{ fontWeight: 700 }}> {post.yoast_head_json.description}</p>
+        <Link href={`/${post.id}`}>
+          <button className={styles.button}>Read Full Post</button>{" "}
+        </Link>
       </div>
     </div>
     // </div>

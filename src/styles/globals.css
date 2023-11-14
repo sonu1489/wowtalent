@@ -1,13 +1,29 @@
- * {
-   box-sizing: border-box;
-   padding: 0;
-   margin: 0;
- }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
- html,
- body {
-   max-width: 100vw;
-   overflow-x: hidden;
-   /* color: #fff; */
-   background-color: #000;
- }
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #000;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+
+p,
+li {
+  line-height: 30px;
+  letter-spacing: 1px;
+}

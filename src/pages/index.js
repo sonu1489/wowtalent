@@ -60,14 +60,6 @@ const BlogPage = ({ blogPosts, loading, error }) => {
       </Head>
       {/* <main className={styles.main}> */}
 
-      <div className={styles.navbar}>
-        <img
-          style={{ width: "260px" }}
-          src="https://wowtalent.live/wp-content/themes/wow/asset/img/logo.png"
-          alt="companyLogo"
-        />
-        {/* <h1>WowTalent Blog</h1> */}
-      </div>
       <main className={styles.container}>
         {/* Render blog posts */}
         <div className={styles.grid}>
@@ -87,7 +79,6 @@ export async function getServerSideProps() {
 
   try {
     const response = await fetch("https://wowtalent.live/wp-json/wp/v2/posts");
-    console.log(typeof response.status);
     if (response.statusText === "OK" && response.status === 200) {
       const data = await response.json();
       blogPosts = data;
